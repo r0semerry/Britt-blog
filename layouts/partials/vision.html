@@ -1,0 +1,304 @@
+<header id="vision" class="section-vision">
+  <!-- Marquee Section -->
+  <section class="section-marquee">
+    <div class="marquee-component">
+      <div class="marquee-inner-wrapper" id="marquee-scroll">
+        <div class="marquee-track">
+          <!-- First set of items -->
+          {{ range $.Site.Data.home.vision.marquee_items }}
+          <div class="marquee-item">
+            <div class="marquee-image-wrapper">
+              {{ partial "svg/hand-icon.html" $ }}
+            </div>
+          </div>
+          <div class="marquee-item">
+            <div class="{{ .class }}">
+              <h1 class="heading-style-h1">{{ .text }}</h1>
+            </div>
+          </div>
+          {{ end }}
+
+          <!-- Duplicate for seamless loop -->
+          {{ range $.Site.Data.home.vision.marquee_items }}
+          <div class="marquee-item">
+            <div class="marquee-image-wrapper">
+              {{ partial "svg/hand-icon.html" $ }}
+            </div>
+          </div>
+          <div class="marquee-item">
+            <div class="{{ .class }}">
+              <h1 class="heading-style-h1">{{ .text }}</h1>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision Component -->
+  <div class="vision-component">
+    <!-- Vision Text Content -->
+    <div class="padding-global">
+      <div class="container-small">
+        <div class="padding-top padding-large">
+          <div class="text-align-center">
+            <div class="margin-bottom margin-medium">
+              <div class="text-style-tagline">{{ $.Site.Data.home.vision.tagline }}</div>
+            </div>
+            <div class="margin-bottom margin-small">
+              <h2>{{ $.Site.Data.home.vision.heading }}</h2>
+            </div>
+            <p class="text-size-medium">{{ $.Site.Data.home.vision.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="vision-content-bottom">
+      <div class="vision-image-container">
+        <div class="vision-image-wrapper is-image-large" id="hero-image">
+          <img loading="lazy" src="{{ $.Site.Data.home.vision.image_url }}" alt="{{ $.Site.Data.home.vision.image_alt }}" class="vision-image4">
+          <div class="text-overlay-wrap text-color-secondary">
+            <div class="padding-global">
+              <div class="container-large">
+                <h2 class="vision-overlay-text">{{ $.Site.Data.home.vision.overlay_text | safeHTML }}</h2>
+              </div>
+            </div>
+            <div class="dark-gradient"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Dynamically set vision section height
+  function setVisionHeight() {
+  const visionSection = document.querySelector('.vision-content-bottom');
+  const heroImage = document.getElementById('hero-image');
+
+  if (!visionSection) return;
+
+  const windowHeight = window.innerHeight;
+  // Calculate exact height needed for animation to complete
+  // The image reaches fullscreen at 100vh scroll distance
+  // Add buffer for the sticky positioning
+  const minHeight = windowHeight * 1.2; // Reduced from 1.5
+
+  visionSection.style.minHeight = `${minHeight}px`;
+}
+
+
+  // Split text into individual letters for animation
+  function splitTextIntoLetters() {
+    const overlayText = document.querySelector('.vision-overlay-text');
+    if (!overlayText) return;
+
+    const text = overlayText.textContent || overlayText.innerText;
+    overlayText.setAttribute('aria-label', text);
+    overlayText.innerHTML = '';
+
+    const words = text.split(' ');
+
+    words.forEach((word, wordIndex) => {
+      const wordWrapper = document.createElement('div');
+      wordWrapper.setAttribute('aria-hidden', 'true');
+      wordWrapper.style.position = 'relative';
+      wordWrapper.style.display = 'inline-block';
+
+      if (word.includes(',')) {
+        const parts = word.split(',');
+        parts.forEach((part, i) => {
+          [...part].forEach(char => {
+            const charSpan = document.createElement('div');
+            charSpan.setAttribute('aria-hidden', 'true');
+            charSpan.style.position = 'relative';
+            charSpan.style.display = 'inline-block';
+            charSpan.style.opacity = '0';
+            charSpan.textContent = char;
+            wordWrapper.appendChild(charSpan);
+          });
+
+          if (i === 0) {
+            const comma = document.createElement('div');
+            comma.setAttribute('aria-hidden', 'true');
+            comma.style.position = 'relative';
+            comma.style.display = 'inline-block';
+            comma.style.opacity = '0';
+            comma.textContent = ',';
+            wordWrapper.appendChild(comma);
+
+            overlayText.appendChild(wordWrapper);
+            overlayText.appendChild(document.createElement('br'));
+
+            const newWordWrapper = document.createElement('div');
+            newWordWrapper.setAttribute('aria-hidden', 'true');
+            newWordWrapper.style.position = 'relative';
+            newWordWrapper.style.display = 'inline-block';
+
+            [...parts[1]].forEach(char => {
+              const charSpan = document.createElement('div');
+              charSpan.setAttribute('aria-hidden', 'true');
+              charSpan.style.position = 'relative';
+              charSpan.style.display = 'inline-block';
+              charSpan.style.opacity = '0';
+              charSpan.textContent = char;
+              newWordWrapper.appendChild(charSpan);
+            });
+
+            overlayText.appendChild(newWordWrapper);
+          }
+        });
+      } else {
+        [...word].forEach(char => {
+          const charSpan = document.createElement('div');
+          charSpan.setAttribute('aria-hidden', 'true');
+          charSpan.style.position = 'relative';
+          charSpan.style.display = 'inline-block';
+          charSpan.style.opacity = '0';
+          charSpan.textContent = char;
+          wordWrapper.appendChild(charSpan);
+        });
+
+        overlayText.appendChild(wordWrapper);
+      }
+
+      if (wordIndex < words.length - 1 && !word.includes(',')) {
+        overlayText.appendChild(document.createTextNode(' '));
+      }
+    });
+  }
+
+  // Animate letters when overlay becomes visible
+  function animateOverlayText(opacity) {
+    const letters = document.querySelectorAll('.vision-overlay-text div[aria-hidden="true"]');
+    letters.forEach((letter, index) => {
+      setTimeout(() => {
+        letter.style.opacity = opacity > 0 ? '1' : '0';
+        letter.style.transition = 'opacity 0.05s ease';
+      }, index * 30);
+    });
+  }
+
+  // Scroll-triggered horizontal marquee
+  window.addEventListener('scroll', function() {
+    const marquee = document.getElementById('marquee-scroll');
+    if (marquee) {
+      const scrolled = window.pageYOffset;
+      marquee.style.transform = `translate3d(-${scrolled * 0.5}px, 0, 0)`;
+    }
+  });
+
+  // Hero image zoom effect
+  let ticking = false;
+  let lastProgress = 0;
+
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      window.requestAnimationFrame(function() {
+        updateVisionAnimation();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+
+  function updateVisionAnimation() {
+    const heroImage = document.getElementById('hero-image');
+    const visionSection = document.querySelector('.vision-content-bottom');
+
+    if (!heroImage || !visionSection) return;
+
+    const sectionRect = visionSection.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    const animationStart = windowHeight * 0.7;
+    const animationEnd = -windowHeight * 0.3;
+    const animationRange = animationStart - animationEnd;
+    const currentScroll = animationStart - sectionRect.top;
+
+    let progress = currentScroll / animationRange;
+    progress = Math.max(0, Math.min(1, progress));
+
+    if (progress > 0 && progress < 1) {
+      // Image grows from initial size to fullscreen
+      const width = 60 + (progress * 40);
+      const height = 60 + (progress * 40);
+      const borderRadius = 16 - (progress * 16);
+
+      heroImage.style.width = `${width}vw`;
+      heroImage.style.height = `${height}vh`;
+      heroImage.style.borderRadius = `${borderRadius}px`;
+
+      // Text appears at 55% progress
+      const overlay = heroImage.querySelector('.text-overlay-wrap');
+      if (overlay) {
+        if (progress >= 0.55) {
+          overlay.style.opacity = '1';
+
+          if (lastProgress < 0.55 && progress >= 0.55) {
+            animateOverlayText(1);
+          }
+        } else {
+          overlay.style.opacity = '0';
+
+          if (lastProgress >= 0.55 && progress < 0.55) {
+            animateOverlayText(0);
+          }
+        }
+      }
+
+      lastProgress = progress;
+
+    } else if (progress >= 1) {
+      // Lock at fullscreen
+      heroImage.style.width = '100vw';
+      heroImage.style.height = '100vh';
+      heroImage.style.borderRadius = '0px';
+
+      const overlay = heroImage.querySelector('.text-overlay-wrap');
+      if (overlay) {
+        overlay.style.opacity = '1';
+
+        if (lastProgress < 1) {
+          animateOverlayText(1);
+        }
+      }
+
+      lastProgress = progress;
+
+    } else {
+      // Reset to initial size
+      heroImage.style.width = '60vw';
+      heroImage.style.height = '60vh';
+      heroImage.style.borderRadius = '16px';
+
+      const overlay = heroImage.querySelector('.text-overlay-wrap');
+      if (overlay) {
+        overlay.style.opacity = '0';
+
+        if (lastProgress > 0) {
+          animateOverlayText(0);
+        }
+      }
+
+      lastProgress = progress;
+    }
+  }
+
+  // Initialize
+  window.addEventListener('DOMContentLoaded', function() {
+    setVisionHeight();
+    splitTextIntoLetters();
+    updateVisionAnimation();
+  });
+
+  // Recalculate on resize
+  window.addEventListener('resize', function() {
+    setVisionHeight();
+    updateVisionAnimation();
+  });
+</script>
