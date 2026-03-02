@@ -1,0 +1,75 @@
+<!-- Skip to main content link for keyboard navigation -->
+<a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+<header class="navbar_component" role="banner">
+  <div class="navbar_container">
+    <!-- Logo -->
+    <a href="{{ .Site.BaseURL }}" class="navbar_logo-link" aria-label="GiveWell Home">
+      <div class="navbar_logo">{{ .Site.Title }}</div>
+    </a>
+
+    <!-- Desktop Navigation -->
+    <nav class="navbar_menu" role="navigation" aria-label="Main navigation" id="main-nav">
+      <div class="navbar_menu-links">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}" class="navbar_link">{{ .Name }}</a>
+        {{ end }}
+      </div>
+      
+      <div class="navbar_menu-buttons">
+        <a href="#contact" class="btn" aria-label="Make a donation">
+          <div>Contact</div>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button 
+      class="navbar_menu-button" 
+      aria-label="Toggle menu" 
+      aria-expanded="false" 
+      aria-controls="main-nav"
+      id="menu-toggle"
+    >
+      <div class="menu-icon1">
+        <div class="menu-icon1_line-top"></div>
+        <div class="menu-icon1_line-middle">
+          <div class="menu-icon1_line-middle-inner"></div>
+        </div>
+        <div class="menu-icon1_line-bottom"></div>
+      </div>
+    </button>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle with accessibility
+  (function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+    
+    if (menuToggle && mainNav) {
+      menuToggle.addEventListener('click', function() {
+        const isOpen = mainNav.classList.toggle('is-open');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!event.target.closest('.navbar_component')) {
+          mainNav.classList.remove('is-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      // Close menu on escape key
+      document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && mainNav.classList.contains('is-open')) {
+          mainNav.classList.remove('is-open');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.focus();
+        }
+      });
+    }
+  })();
+</script>
