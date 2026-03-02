@@ -1,0 +1,70 @@
+<section id="empower" class="section_empower">
+  <div class="padding-global">
+    <div class="container-medium">
+      <div class="empower_component">
+        <div class="grain"></div>
+        <div class="noise"></div>
+
+        <div class="margin-bottom margin-medium">
+          <div class="text-style-tagline">{{ $.Site.Data.home.empower.heading }}</div>
+        </div>
+
+        <div class="empower_accordion">
+          {{ range $i, $item := $.Site.Data.home.empower.items }}
+          <!-- Accordion Item {{ add $i 1 }} -->
+          <div class="empower_accordion-item{{ if eq $i 0 }} active{{ end }}" data-accordion="{{ $item.tab }}">
+            <a class="empower_link-block" role="button">
+              <h3 class="text-style-nowrap">
+                <span class="empower_link-text-small">{{ $item.number }}</span>
+                <span class="first-letter">{{ $item.first_letter }}</span>{{ $item.rest }}
+              </h3>
+              <div class="empower_tab_timer"></div>
+              <div class="empower_tab_timer red"></div>
+            </a>
+
+            <div class="empower_accordion-content">
+              <div class="empower_tab-container">
+                <div class="empower_card">
+                  <div class="empower_card-content">
+                    {{ $item.svg | safeHTML }}
+
+                    <div class="empower_card-text-wrap">
+                      <div class="margin-bottom margin-small">
+                        <div class="heading-style-h5">{{ $item.card_heading }}</div>
+                      </div>
+                      <p class="text-size-regular text-weight-semibold">{{ $item.description }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  var items = document.querySelectorAll('.empower_accordion-item');
+
+  items.forEach(function(item) {
+    var link = item.querySelector('.empower_link-block');
+
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      var isActive = item.classList.contains('active');
+
+      items.forEach(function(i) {
+        i.classList.remove('active');
+      });
+
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+})();
+</script>
