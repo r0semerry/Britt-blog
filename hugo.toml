@@ -1,0 +1,54 @@
+baseURL = "https://brittany.contact"  # Update to actual domain
+languageCode = "en-us"
+title = "Brittany.contact"
+
+# Build settings
+enableRobotsTXT = true
+enableGitInfo = false
+disableKinds = ["taxonomy", "term"]  # Disable if not using tags/categories
+
+# Performance
+[minify]
+  minifyOutput = true
+
+# Caching for faster builds
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"
+
+# Markup settings
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Site parameters
+[params]
+  description = "Empowering communities through charitable giving"
+  author = "Brittany"  # Update from "GiveWell"
+
+# Menu configuration
+[[menu.main]]
+  identifier = "mission"
+  name = "Inspired by"
+  url = "#mission"
+  weight = 1
+
+[[menu.main]]
+  identifier = "empower"
+  name = "The Recipe"
+  url = "#empower"
+  weight = 2
+
+[[menu.main]]
+  identifier = "team"
+  name = "About me"
+  url = "#team"
+  weight = 3
+
+[[menu.main]]
+  identifier = "stats"
+  name = "My resume"
+  url = "#stats"
+  weight = 4
