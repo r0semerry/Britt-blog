@@ -1,0 +1,28 @@
+<header class="section_hero">
+  <div class="padding-global">
+    <div class="container-large is--100">
+      <div class="hero_content">
+        <div class="padding-global">
+          <div class="margin-bottom margin-medium">
+            <div class="_2col_grid z-index-2">
+              <h1 class="hero-title" aria-label="{{ $.Site.Data.home.hero.aria_label }}">{{ $.Site.Data.home.hero.heading }}</h1>
+              <p class="text-size-medium text-weight-semibold">
+{{ $.Site.Data.home.hero.quote }}
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="hero_visuals">
+          <img
+            src="{{ $.Site.Data.home.hero.image_url }}"
+            loading="eager"
+            alt="{{ $.Site.Data.home.hero.image_alt }}"
+            class="hero_img"
+          >
+          <div class="noise is-hero"></div>
+          <div class="dark_gradient"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
