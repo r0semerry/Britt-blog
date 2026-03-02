@@ -6,7 +6,7 @@ hero:
   image_alt: "A peaceful lake with a city in the background surrounded by fluffy clouds"
 
 mission:
-  aria_label: "Our Mission - Our mission is to empower creators and changemakers by providing a platform that connects their visions with generous supporters. We believe that every story deserves to be told and every dream deserves a chance to flourish."
+  aria_label: "Our Mission"
   quote_html: "\"If a [wo]man does not have sauce, then [they are] lost. But the same [wo]man can get lost in the sauce.\"<br>\n            ― Gucci Mane"
   cta_primary: "My Resume"
   cta_primary_href: "#stats"
