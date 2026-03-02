@@ -82,8 +82,8 @@ stats:
   heading: "From careful thinking to real-world outcomes: Work that compounds"
   intro: "With every donation, we've been able to reach farther and do more. In just the past 12 months, we've provided resources to over 50 grassroots initiatives, supported 100+ volunteers working on the ground, and directly impacted communities facing real challenges—with real solutions. From mental health support to educational access, you turned ideas into measurable change."
   cards:
-    - title: "Projects supported through local programs"
-      number: "256"
+    - title: "Years working at the intersection of people + systems"
+      number: "8+"
       description: "Over 25,000 people directly supported through community programs, crisis response, and ongoing care initiatives."
       bg_class: "background-color-purple"
       tall: true
