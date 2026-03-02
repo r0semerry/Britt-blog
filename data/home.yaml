@@ -127,14 +127,14 @@ vision:
   overlay_text: "— let's drive change,<br>together"
 
 footer:
-  cta_title: "Help us turn small actions into lasting change. Your donation supports the people and projects building a better future — one step at a time."
-  cta_button: "Donate"
+  cta_title: "Curious about something I'm working on or think we could have an interesting coffee, please reach out!"
+  cta_button: "Contact"
   cta_href: "#"
   brand: "Brittany.contact"
   social_url: "https://instagram.com/rosemerry.tif"
   social_handle: "rosemerry.tif"
   links:
-    - label: "Privacy Policy"
-      url: "#"
-    - label: "Terms of Service"
-      url: "#"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/brittanyromero/"
+    - label: "goodreads"
+      url: "https://www.goodreads.com/user/show/30672313-brittany"
