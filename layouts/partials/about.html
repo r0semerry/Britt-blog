@@ -1,0 +1,33 @@
+<!-- About Section -->
+<section id="about" class="section_about">
+  <div class="padding-global">
+    <div class="container-small">
+      <div class="padding-section-large">
+        <div class="team_component">
+          <div class="text-align-center">
+            <div class="margin-bottom margin-small">
+              <div class="team_heading-wrapper">
+                <div class="margin-bottom margin-medium">
+                  <div class="text-style-tagline">{{ $.Site.Data.home.about.tagline }}</div>
+                </div>
+                <h2 class="heading-style-h2">
+                  {{ $.Site.Data.home.about.heading_prefix }}
+                  <span class="team_heading-span"> </span>{{ $.Site.Data.home.about.heading_span1 }}
+                  <span class="team_heading-span _2"> </span>{{ $.Site.Data.home.about.heading_span2 }}
+                  <span class="team_heading-span _3"> </span>{{ $.Site.Data.home.about.heading_suffix }}
+                </h2>
+              </div>
+            </div>
+            <div class="margin-top margin-medium">
+              <div class="button-group is-center">
+                <a href="{{ $.Site.Data.home.about.cta_href }}" class="btn btn-full-blue">
+                  <div>{{ $.Site.Data.home.about.cta }}</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
