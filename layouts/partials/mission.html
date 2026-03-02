@@ -1,0 +1,30 @@
+<!-- Mission Section -->
+<section id="mission" class="section_mission">
+  <div class="padding-global">
+    <div class="container-small">
+      <div class="padding-section-large">
+        <div class="mission_component">
+          <h2 aria-label="{{ $.Site.Data.home.mission.aria_label }}">
+
+            {{ $.Site.Data.home.mission.quote_html | safeHTML }}
+
+          <div class="margin-top margin-medium">
+            <div class="button-group">
+              <a href="{{ $.Site.Data.home.mission.cta_primary_href }}" class="btn btn-full-blue">
+                <div>{{ $.Site.Data.home.mission.cta_primary }}</div>
+              </a>
+              <a href="{{ $.Site.Data.home.mission.cta_secondary_href }}" class="button is-link is-icon">
+                <div>{{ $.Site.Data.home.mission.cta_secondary }}</div>
+                <div class="icon-embed-xxsmall">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5"></path>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
