@@ -6,10 +6,10 @@ hero:
   image_alt: "A peaceful lake with a city in the background surrounded by fluffy clouds"
 
 mission:
-  aria_label: "Our Mission - Our mission is to empower creators and changemakers by providing a platform that connects their visions with generous supporters. We believe that every story deserves to be told and every dream deserves a chance to flourish."
+  aria_label: "Our Mission"
   quote_html: "\"If a [wo]man does not have sauce, then [they are] lost. But the same [wo]man can get lost in the sauce.\"<br>\n            ― Gucci Mane"
-  cta_primary: "My Resume"
-  cta_primary_href: "#stats"
+  cta_primary: "About me"
+  cta_primary_href: "#about"
   cta_secondary: "Contact"
   cta_secondary_href: "#"
 
@@ -100,7 +100,7 @@ vision:
   description: "Cities, technology, relationships, routines, and identities fascinate me and how they shape the world. This site is a place to share ideas, learn as I go, and focus on what matters. If anything here connects with you, feel free to reach out."
   image_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f714_main.jpg"
   image_alt: "Main Vision Image"
-  overlay_text: "— let's drive change,<br>together"
+  overlay_text: "— let's drive change,"
 
 footer:
   cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat, please reach out!"
