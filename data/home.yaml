@@ -1,12 +1,12 @@
 hero:
   heading: "Brittany"
   aria_label: "GiveWell"
-  quote: "When inclusion and creativity come together, life is just better - for everyone."
+  quote: "When empathy, clear thinking, inclusion, and creativity come together, life just works a little better - for everyone."
   image_url: "https://cdn.prod.website-files.com/68011fed23249a9699d7b42b/6802f26cb1c279ff927f7887_visualelectric-1744594470866.avif"
   image_alt: "A peaceful lake with a city in the background surrounded by fluffy clouds"
 
 mission:
-  aria_label: "Our Mission"
+  aria_label: "Our Mission - Our mission is to empower creators and changemakers by providing a platform that connects their visions with generous supporters. We believe that every story deserves to be told and every dream deserves a chance to flourish."
   quote_html: "\"If a [wo]man does not have sauce, then [they are] lost. But the same [wo]man can get lost in the sauce.\"<br>\n            ― Gucci Mane"
   cta_primary: "My Resume"
   cta_primary_href: "#stats"
@@ -24,7 +24,7 @@ empower:
       card_heading: "Curiousity as practice"
       description: "I read to understand how systems work in real life — who they support, who they overlook, and what assumptions they quietly rely on."
       svg: |
-         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="empower_card-img">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="empower_card-img">
           <path class="st0" d="M222.3,5.7c9.3,2.2,18.8,3.2,28,5.7,41.9,11.1,76.3,41,90.8,76.9,1.6,4,4.1,16.1,6.2,18.3s11.3,5,14.7,6.9c92.4,52.2,45,178.4-64.6,173.1-6.6-.3-21.8-4.4-25.9-4s-19.8,10.3-25.6,12.3-14.4,4.6-21.5,4.5c0-18.7-.2-37.5.2-56.2l71.1-54.1c15.4-14.1-3.4-34.8-23.2-22.3s-29.3,24.6-44.2,34.6c-1.2.8-2.6,1.5-3.9,2v-58.8c0-.4-4.2-6.7-5.1-7.4-6.3-5.1-16.7-5.3-23.2-.4-1.6,1.2-5.7,6.4-5.7,7.9v58.8c-1.4-.4-2.8-1.2-3.9-2-14.7-9.9-29.2-25.3-44.2-34.6-20.2-12.5-38.5,8.3-23.2,22.3l71.3,54.3v55.9c-8.1.1-16.4-2.7-23.7-5.5s-20.7-11.1-23.3-11.3c-4-.4-19.3,3.7-25.9,4-110,5.3-157.3-120.9-63.2-173.9,3.2-1.8,11.4-4.1,13.4-6.1s4.4-13.6,5.9-17.5c14.7-36.8,48.5-65.9,91.1-77.6l26.9-5.7h30.6Z"/>
           <path class="st0" d="M496.2,512h-236.5c-54.9.3-77.7.3-89,.3-58,0-85.8-42.5-138.4-107.7-22-30.2-24.7-63.1,9.7-78.3,35.7-15.8,60.3,7.7,90.8,19.7-3.8,10.6-8.9,19.8-10,31.2-3.8,40.5,32.3,77.1,78.5,80.4,36.1,2.6,76.3-1.7,112.9-.2,17.2-4.4,17.9-23.9.9-29-36-3-75.9,2.4-111.5-.5-54.3-4.4-64.7-70.4-13-86v-41.5c11.3,1.4,22.7,1.4,34,0,0,12.8,0,25.7,0,38.6h47c1.7,0,22.5-15.3,27.1-17.8,65.5-36.1,162.8-27.3,210.3,27.9,1.8,49.7.2,99.8.8,149.7-1.4,7.4-6,10.7-13.6,13.3Z"/>
         </svg>
@@ -45,7 +45,7 @@ empower:
       number: "03"
       tab: "tab3"
       card_heading: "Shared stewardship"
-      description: "Sunlight, water, and nurturance: the basic things that keep plants alive also keep humans alive. Being a steward of the land, and learning through slow seasonal work, keeps me connected to my roots and to my community."
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim neque, varius ut lorem eget, blandit venenatis felis. Sed tellus magna, elementum non commodo sit amet, finibus eu nunc. Integer bibendum gravida scelerisque."
       svg: |
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" class="empower_card-img">
           <g clip-path="url(#clip0_8295_12766)">
@@ -82,8 +82,8 @@ stats:
   heading: "From careful thinking to real-world outcomes: Work that compounds"
   intro: "With every donation, we've been able to reach farther and do more. In just the past 12 months, we've provided resources to over 50 grassroots initiatives, supported 100+ volunteers working on the ground, and directly impacted communities facing real challenges—with real solutions. From mental health support to educational access, you turned ideas into measurable change."
   cards:
-    - title: "Years working at the intersection of people + systems"
-      number: "8+"
+    - title: "Projects supported through local programs"
+      number: "256"
       description: "Over 25,000 people directly supported through community programs, crisis response, and ongoing care initiatives."
       bg_class: "background-color-purple"
       tall: true
@@ -117,7 +117,7 @@ vision:
       class: "marquee-heading-wrapper"
     - text: "Accessibility"
       class: "marquee-heading-wrapper hide-tablet"
-    - text: "Creativity"
+    - text: "Take Action"
       class: "marquee-heading-wrapper hide-mobile-landscape"
   tagline: "modus operandi"
   heading: "Curious by nature and reflective by default, I'm drawn to systems and how they shape the way people live."
@@ -127,7 +127,7 @@ vision:
   overlay_text: "— let's drive change,<br>together"
 
 footer:
-  cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat, please reach out!"
+  cta_title: "Curious about something I'm working on or think we could have an interesting coffee, please reach out!"
   cta_button: "Contact"
   cta_href: "#"
   brand: "Brittany.contact"
