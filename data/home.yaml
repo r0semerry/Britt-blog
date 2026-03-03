@@ -100,11 +100,11 @@ vision:
   description: "Cities, technology, relationships, routines, and identities fascinate me and how they shape the world. This site is a place to share ideas, learn as I go, and focus on what matters. If anything here connects with you, feel free to reach out."
   image_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f714_main.jpg"
   image_alt: "Main Vision Image"
-  overlay_text: "— let's drive change,"
+  overlay_text: "— let's drive change, together"
 
 footer:
   cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat, please reach out!"
-  cta_button: "Contact"
+  cta_button: "Contact me on LinkedIn"
   cta_href: "#"
   brand: "Brittany.contact"
   social_url: "https://instagram.com/rosemerry.tif"
