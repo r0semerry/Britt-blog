@@ -60,21 +60,21 @@ stats:
   cards:
     - title: "Years working at the intersection of people + systems"
       number: "8+"
-      description: "Over 25,000 people directly supported through community programs, crisis response, and ongoing care initiatives."
+      description: "Experience spanning customer support, community initiatives, and systems-level problem solving—supporting thousands of people through high-stakes, high-empathy interactions."
       bg_class: "background-color-purple"
       tall: true
       texture_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f6de_pinkish.avif"
       texture_class: "stats_texture is-darken-20"
     - title: "Customer Satisfaction Rating"
       number: "85%"
-      description: "of every dollar goes directly to on-the-ground efforts, tools, and services making a difference where it's needed most."
+      description: "Average satisfaction across customer-facing roles, reflecting an emphasis on clarity, empathy, and resolving issues in ways that leave people feeling supported—not rushed."
       bg_class: "background-color-lightblue"
       tall: false
       texture_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f6db_purple_blue.avif"
       texture_class: "stats_texture is-darken-40"
-    - title: "Volunteer & Project Support"
-      number: "120+"
-      description: "120+ local volunteers mobilized across 60+ grassroots projects in the past year."
+    - title: "Interdisciplinary academic foundation"
+      number: "2"
+      description: "Two degrees grounded in different ways of knowing—one in the sciences and one in the arts—shaping how I approach problems through both analytical rigor and creative inquiry."
       bg_class: "background-color-vermillion"
       tall: false
       texture_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f6de_pinkish.avif"
