@@ -47,10 +47,8 @@ empower:
 
 about:
   tagline: "About me"
-  heading_prefix: "I'm someone fascinated by the ways"
-  heading_span1: "kindness, understanding, and"
-  heading_span2: "fresh ideas"
-  heading_suffix: "transform the world."
+  heading: "Curious by nature and reflective by default, I'm drawn to systems and how they shape the way people live."
+  description: "Cities, technology, relationships, routines, and identities fascinate me and how they shape the world. This site is a place to share ideas, learn as I go, and focus on what matters. If anything here connects with you, feel free to reach out."
   cta: "Contact"
   cta_href: "#contact"
 
