@@ -103,8 +103,7 @@ vision:
   overlay_text: "— let's drive change, together"
 
 footer:
-  cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat?"
-    </br> "Please reach out!"
+  cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat? Please reach out!"
   cta_button: "Contact me on LinkedIn"
   cta_href: "https://www.linkedin.com/in/brittanyromero/"
   brand: "Brittany.contact"
