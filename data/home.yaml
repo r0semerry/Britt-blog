@@ -7,7 +7,9 @@ hero:
 
 mission:
   aria_label: "Our Mission"
-  quote_html: "\"If a [wo]man does not have sauce, then [they are] lost. But the same [wo]man can get lost in the sauce.\"<br>\n            ― Gucci Mane"
+quote_html: |
+  "If a [wo]man does not have sauce, then [they are] lost. But the same [wo]man can get lost in the sauce."<br>
+  ― Gucci Mane
   cta_primary: "My Resume"
   cta_primary_href: "#stats"
   cta_secondary: "Contact"
