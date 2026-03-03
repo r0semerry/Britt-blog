@@ -1,6 +1,6 @@
 hero:
   heading: "Brittany"
-  aria_label: "GiveWell"
+  aria_label: "Introduction: Brittany"
   quote: "When inclusion and creativity come together, life is just better - for everyone."
   image_url: "https://cdn.prod.website-files.com/68011fed23249a9699d7b42b/6802f26cb1c279ff927f7887_visualelectric-1744594470866.avif"
   image_alt: "A peaceful lake with a city in the background surrounded by fluffy clouds"
@@ -21,14 +21,14 @@ empower:
       rest: "eading"
       number: "01"
       tab: "tab1"
-      card_heading: "Curiousity as practice"
+      card_heading: "Curiosity as practice"
       description: "I read to understand how systems work in real life — who they support, who they overlook, and what assumptions they quietly rely on."
     - title: "Accessibility"
       first_letter: "A"
       rest: "ccessibility"
       number: "02"
       tab: "tab2"
-      card_heading: "Who do we involve"
+      card_heading: "Who do we involve?"
       description: "I’m interested in reducing friction, lowering cognitive load, and designing in ways that make participation feel possible, not overwhelming."
     - title: "Gardening"
       first_letter: "G"
@@ -56,7 +56,7 @@ about:
 
 stats:
   heading: "From careful thinking to real-world outcomes: Work that compounds"
-  intro: "With every donation, we've been able to reach farther and do more. In just the past 12 months, we've provided resources to over 50 grassroots initiatives, supported 100+ volunteers working on the ground, and directly impacted communities facing real challenges—with real solutions. From mental health support to educational access, you turned ideas into measurable change."
+  intro: "Across my work in customer support, community programs, and cross-functional projects, I’ve focused on reducing friction, supporting people in moments that matter, and helping systems work more humanely. The numbers below reflect cumulative experience—not just output, but sustained care, collaboration, and follow-through."
   cards:
     - title: "Years working at the intersection of people + systems"
       number: "8+"
@@ -97,13 +97,13 @@ vision:
       class: "marquee-heading-wrapper hide-mobile-landscape"
   tagline: "modus operandi"
   heading: "Curious by nature and reflective by default, I'm drawn to systems and how they shape the way people live."
-  description: "Cities, technology, relationships, routines, and identities fascinate me and how they shape the world. This site is a place to share ideas, learn as I go, and focus on what matters. If anything here connects with you, feel free to reach out."
+  description: "Cities, technology, relationships, routines, and identities fascinate me—and how they shape the world. This site is a place to share ideas, learn as I go, and focus on what matters. If anything here connects with you, feel free to reach out."
   image_url: "https://cdn.prod.website-files.com/696f263de0ac4c57cc26f67c/696f263ee0ac4c57cc26f714_main.jpg"
   image_alt: "Main Vision Image"
   overlay_text: "— let's drive change, together"
 
 footer:
-  cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat, please reach out!"
+  cta_title: "Curious about something I'm working on or think we could have an interesting coffee chat? Please reach out!"
   cta_button: "Contact me on LinkedIn"
   cta_href: "https://www.linkedin.com/in/brittanyromero/"
   brand: "Brittany.contact"
