@@ -1,3 +1,5 @@
+__build_probe: "hello"
+
 hero:
   heading: "Brittany"
   aria_label: "GiveWell"
