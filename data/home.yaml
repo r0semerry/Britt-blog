@@ -45,7 +45,7 @@ empower:
       number: "03"
       tab: "tab3"
       card_heading: "Shared stewardship"
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim neque, varius ut lorem eget, blandit venenatis felis. Sed tellus magna, elementum non commodo sit amet, finibus eu nunc. Integer bibendum gravida scelerisque."
+      description: "Sunlight, water, and nurturance: the basic things that keep plants alive also keep humans alive. Being a steward of the land, and learning through slow seasonal work, keeps me connected to my roots and to my community."
       svg: |
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" class="empower_card-img">
           <g clip-path="url(#clip0_8295_12766)">
